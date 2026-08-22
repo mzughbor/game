@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Js first time ever.</title>
+    <title>Mahmoud Zughbor — Three.js lab</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <style>
-        body {
-            margin: 0;        }
-    </style>
+    <canvas class="webgl"></canvas>
+
+    <div class="page">
+        <header class="nav">
+            <a class="logo" href="#">mzughbor</a>
+            <a class="nav-link" href="#about">About</a>
+        </header>
+
+        <section class="hero">
+            <p class="eyebrow">Full-Stack Developer</p>
+            <h1>Building modern web applications</h1>
+            <p class="lede">
+                I craft scalable solutions with React, Django, and modern APIs.
+                This page is a lab: HTML on top, Three.js behind it.
+            </p>
+            <a class="btn" href="#about">Scroll</a>
+        </section>
+
+        <section class="about" id="about">
+            <h2>The canvas stays. The page moves.</h2>
+            <p>
+                Resize the window. The 3D scene should keep the correct aspect
+                ratio and stay sharp without melting the GPU.
+            </p>
+        </section>
+    </div>
 
     <script type="module" src="/main.js"></script>
 </body>
